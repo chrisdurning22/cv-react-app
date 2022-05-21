@@ -19,8 +19,7 @@ export default class Api {
   baseURL: string | undefined;
 
   constructor() {
-    // this.baseURL = process.env.REACT_APP_API_ENDPOINT;
-    this.baseURL = '//cv-django-api.herokuapp.com/api';
+    this.baseURL = process.env.REACT_APP_API_ENDPOINT;
   }
 
   request = (methodType: MethodType, body?: any) => {
