@@ -9,7 +9,7 @@ type LoginProps = {
 }
 
 // I used a functional component here because it makes redirecting/navigating much easier
-function Login(props: LoginProps) {
+function Login({setIsUserLoggedIn}: LoginProps) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
@@ -31,7 +31,7 @@ function Login(props: LoginProps) {
       }
 
       // set isUserLoggedIn to true on App component
-      props.setIsUserLoggedIn(true);
+      setIsUserLoggedIn(true);
 
       // navigate to the home page after a successful login
       navigate("/"); 
