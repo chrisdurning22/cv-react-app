@@ -35,7 +35,7 @@ describe('Login Tests', () => {
 
         const alert = await screen.findByRole('alert')
 
-        expect(alert).toHaveTextContent(/successfully authenticated!/i)
+        expect(alert).toHaveTextContent(/successfully authenticated/i)
 
         await waitFor(() => expect(window.localStorage.getItem("isLoggedIn")).toBeDefined())
                         
