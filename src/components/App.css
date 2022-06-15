@@ -47,7 +47,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-color: silver !important;
+  background-color: #F5F5F5 !important;
   /* background-color: grey !important; */
 }
 
@@ -60,8 +60,8 @@ label {
   justify-content: center;
 }
 
-.flex-gap-10 {
-  gap: 10px;
+.flex-gap-15 {
+  gap: 15px;
 }
 
 /*
@@ -69,8 +69,16 @@ label {
 */
 
 .nav-link {
-  font-size: 18px;
+  font-size: 20px;
   color: white !important;
+}
+
+.navbar {
+  background: cadetblue;
+}
+
+a:hover {
+  color: orange !important;
 }
 
 /*
@@ -120,8 +128,14 @@ label {
   width: 200px;
   height: 200px;
   border: 10px solid white;
+  outline: 1px solid rgba(0,0,0,.125);;
   border-radius: 100%;
   overflow: hidden;
+}
+
+.title {
+  font-size: 50px !important;
+  font-family: 'Monofett', cursive;
 }
 
 .sections-footer {
@@ -137,8 +151,11 @@ label {
   margin-bottom: 3rem;
 }
 
-.svg-inline--fa {
-  color: white;
+/*
+  Font Awesome
+*/
+.contact-wrapper > a {
+  color: black;
 }
 
 .input-title {
@@ -154,8 +171,8 @@ label {
 }
 
 .card {
-  margin: 1rem 15rem;
-  background-color:rgba(0, 0, 0, 0.5) !important;
+  margin: 1rem 30rem;
+  background-color:white !important;
 }
 
 .invalid-input {
@@ -190,6 +207,10 @@ label {
   padding-right: 5px;
 }
 
+.sections-body {
+  margin-bottom: 100px !important;
+}
+
 /*
   Section end
 */
@@ -201,6 +222,11 @@ label {
 
 .card-text {
   font-size: 20px;
+}
+
+.section-wrapper {
+  color: black !important;
+  padding: 0px 10px 10px 10px !important;
 }
 
 .white-text {

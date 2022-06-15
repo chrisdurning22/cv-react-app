@@ -1,36 +1,6 @@
-@font-face {
-  font-family: 'LobsterRegular';
-  src: local('LobsterRegular'), url(./fonts/Lobster-Regular.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Pacifico';
-  src: local('LobsterRegular'), url(./fonts/Pacifico-Regular.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'PatuaOne';
-  src: local('PatuaOne'), url(./fonts/PatuaOne-Regular.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Aleo';
-  src: local('Aleo'), url(./fonts/Aleo-Regular.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: local('Roboto'), url(./fonts/Roboto-Medium.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Gravity';
-  src: local('Gravity'), url(./fonts/Gravity-Book.otf) format('opentype');
-}
-
 body {
   margin: 0;
-  font-family: Gravity !important;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -71,8 +41,20 @@ body {
   margin-top: 10px !important;
 }
 
+.margin-bottom-20 {
+  margin-bottom: 20px !important;
+}
+
 .margin-top-15 {
   margin-top: 15px !important;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10px !important;
+}
+
+.margin-bottom-15 {
+  margin-bottom: 15px !important;
 }
 
 .margin-right-5 {
