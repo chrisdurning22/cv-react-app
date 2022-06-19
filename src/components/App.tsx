@@ -12,6 +12,10 @@ import Home from './Home';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { ToastContainer } from 'react-toastify';
 import { IsUserLoggedIn, LogoutUser } from '../api/api';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
+
+
 
 function App() {
   const [isUserLoggedIn, setIsUserLoggedIn] = useState(localStorage.getItem('isLoggedIn') === 'true');
@@ -55,7 +59,7 @@ function App() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="me-auto">
-                    <Nav.Link href="/">CV</Nav.Link>
+                    <Nav.Link href="/"><i><FontAwesomeIcon icon={faBriefcase} size={"1x"}/></i></Nav.Link>
                   </Nav>
                   <Nav>
                     { !isUserLoggedIn && 
