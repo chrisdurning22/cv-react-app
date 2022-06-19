@@ -140,9 +140,14 @@ a:hover {
   overflow: hidden;
 }
 
+@font-face {
+  font-family: 'MonofettRegular';
+  src: local('MonofettRegular'), url(../fonts/Monofett-Regular.ttf) format('truetype');
+}
+
 .title {
   font-size: 50px !important;
-  font-family: 'Monofett', cursive;
+  font-family: MonofettRegular;
 }
 
 .sections-footer {
